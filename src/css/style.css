@@ -1,0 +1,13 @@
+html{
+  font-family: "Courier New", Courier, monospace
+}
+
+#quote {
+  font-size: 3em
+}
+
+#main {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
