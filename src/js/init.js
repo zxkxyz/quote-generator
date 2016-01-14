@@ -7,4 +7,5 @@ $(function() {
 
   var randIndex = Math.floor(Math.random() * quotes.length);
   $("#quote").text('"' + quotes[randIndex] + '"');
+  $("#quote-count").text(quotes.length);
 });
