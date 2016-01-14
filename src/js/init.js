@@ -7,7 +7,7 @@ $(function() {
     "arr... arr arr... arr arr arr...",
     "language is important",
     "recursion is not real in some ways",
-    "let me pull up our heiristic for determining the future"
+    "let me pull up our heuristic for determining the future"
   ];
 
   var randIndex = Math.floor(Math.random() * quotes.length);
