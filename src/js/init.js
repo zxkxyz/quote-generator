@@ -19,7 +19,10 @@ $(function() {
     "i had 4 bodies but 3 souls to pass around",
     "no but... no",
     "reasonably clear as mud?",
-    "where are my zombies"
+    "where are my zombies",
+    "do as i say, not as i do",
+    "i have yet to find something weirder in javascript than d3",
+    "that's my goal here... crush your spirits."
   ];
 
   var randIndex = Math.floor(Math.random() * quotes.length);
