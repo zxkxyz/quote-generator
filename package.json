@@ -1,0 +1,24 @@
+{
+  "name": "chrisquotes",
+  "version": "1.0.0",
+  "description": "basic chris quote generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakarhino/chrisquotegenerator.git"
+  },
+  "author": "Zak Golding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zakarhino/chrisquotegenerator/issues"
+  },
+  "homepage": "https://github.com/zakarhino/chrisquotegenerator#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}
