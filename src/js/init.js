@@ -16,4 +16,11 @@ $(function() {
   var randIndex = Math.floor(Math.random() * quotes.length);
   $("#quote").text('"' + quotes[randIndex] + '"');
   $("#quote-count").text(quotes.length);
+  $("#headshot").on('click',
+     function() {
+        $(this).rotate({ angle:0,animateTo:360,easing: $.easing.easeInOutExpo });
+        randIndex = Math.floor(Math.random() * quotes.length);
+        $("#quote").text('"' + quotes[randIndex] + '"');
+      }
+    );
 });
