@@ -9,9 +9,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+
 var routes = require('./routes/index');
+var quotes = require('./routes/quotes');
 
 app.use('/', routes);
+app.use('/quotes', quotes);
 
 app.listen(1337, function () {
   console.log('Chris Quotes listening on port 1337!');
