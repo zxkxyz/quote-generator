@@ -8,7 +8,9 @@ $(function() {
     "language is important",
     "recursion is not real in some ways",
     "let me pull up our heuristic for determining the future",
-    "The minotaur could be anywhere."
+    "The minotaur could be anywhere.",
+    "You're gonna think I gots it, I gots it, I gots it!",
+    "You'll go back to your desk and nope... you don't gots it..."
   ];
 
   var randIndex = Math.floor(Math.random() * quotes.length);
