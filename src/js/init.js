@@ -10,8 +10,8 @@ $(function() {
     "let me pull up our heuristic for determining the future",
     "The minotaur could be anywhere.",
     "You're gonna think I gots it, I gots it, I gots it!",
-    "You'll go back to your desk and nope... you don't gots it..."
-    "we're not changing the laws of thermodynamics here"
+    "You'll go back to your desk and nope... you don't gots it...",
+    "we're not changing the laws of thermodynamics here",
     "this sprint has nothing to do with anything",
     "im a proramming god, i made fire",
     "no more crazy chris quotes",
