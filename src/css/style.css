@@ -34,3 +34,18 @@ body{
 a {
   color: white;
 }
+
+@media only screen
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  #main {
+  width: 100%;
+  background-color: black;
+}
+
+#video {
+  display: none;
+}
+}
