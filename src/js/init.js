@@ -11,6 +11,15 @@ $(function() {
     "The minotaur could be anywhere.",
     "You're gonna think I gots it, I gots it, I gots it!",
     "You'll go back to your desk and nope... you don't gots it..."
+    "we're not changing the laws of thermodynamics here"
+    "this sprint has nothing to do with anything",
+    "im a proramming god, i made fire",
+    "no more crazy chris quotes",
+    "it's jquery on steroids",
+    "i had 4 bodies but 3 souls to pass around",
+    "no but... no",
+    "reasonably clear as mud?",
+    "where are my zombies"
   ];
 
   var randIndex = Math.floor(Math.random() * quotes.length);
