@@ -25,14 +25,22 @@ $(function() {
     "that's my goal here... crush your spirits."
   ];
 
-  var randIndex = Math.floor(Math.random() * quotes.length);
-  $("#quote").text('"' + quotes[randIndex] + '"');
+  var previousIndex = -1;
+  function generateRandIndex() {
+    randIndex = Math.floor(Math.random() * quotes.length);
+    if(randIndex === previousIndex) {
+      generateRandIndex();
+    }
+    previousIndex = randIndex;
+    return randIndex;
+  }
+  $("#quote").text('"' + quotes[generateRandIndex()] + '"');
   $("#quote-count").text(quotes.length);
   $("#headshot").on('click',
      function() {
         $(this).rotate({ angle:0,animateTo:360,easing: $.easing.easeInOutExpo });
         randIndex = Math.floor(Math.random() * quotes.length);
-        $("#quote").text('"' + quotes[randIndex] + '"');
+        $("#quote").text('"' + quotes[generateRandIndex()] + '"');
       }
     );
 });
