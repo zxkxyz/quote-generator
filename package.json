@@ -16,6 +16,9 @@
     "url": "https://github.com/zakarhino/chrisquotegenerator/issues"
   },
   "homepage": "https://github.com/zakarhino/chrisquotegenerator#readme",
+  "engines": {
+    "node": "5.0.0"
+  },
   "dependencies": {
     "body-parser": "^1.14.2",
     "express": "^4.13.3",
