@@ -23,7 +23,8 @@ $(function() {
     "do as i say, not as i do",
     "i have yet to find something weirder in javascript than d3",
     "that's my goal here... crush your spirits.",
-    "here at makersquare we give you more poop"
+    "here at makersquare we give you more poop",
+    "if a tree falls in the woods, does it make a sound?"
   ];
 
   var previousIndex = -1;
