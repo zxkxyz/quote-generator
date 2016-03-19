@@ -1,0 +1,26 @@
+{
+  "name": "chrisquotegenerator",
+  "version": "1.0.0",
+  "description": "Luxurious display of Chris quotes.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakarhino/chrisquotegenerator.git"
+  },
+  "author": "Zak Golding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zakarhino/chrisquotegenerator/issues"
+  },
+  "homepage": "https://github.com/zakarhino/chrisquotegenerator#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^5.0.0-alpha.2",
+    "mongoose": "^4.4.8"
+  }
+}
