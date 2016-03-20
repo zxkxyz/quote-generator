@@ -1,0 +1,21 @@
+{
+  "name": "chrisquotegenerator",
+  "description": "Luxurious display of Chris quotes.",
+  "main": "server/server.js",
+  "authors": [
+    "Zak Golding"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zakarhino/chrisquotegenerator",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

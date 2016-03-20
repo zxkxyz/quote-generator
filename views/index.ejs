@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Chris Quotes</title>
-  </head>
-  <body>
-    This is a test.
-    <%- body %>
-  </body>
+<html>
+<head>
+  <link rel='stylesheet', href='styles/style.css')>
+  <title>chris quotes</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/jqueryrotate/jQueryRotate.js"></script>
+  <script src="libs/vide/dist/jquery.vide.min.js"></script>
+</head>
+<body>
+<div id="video" style="height: 100%; margin: auto; padding: 0;" data-vide-bg="img/back.webm" data-vide-options="loop: true, muted: true, position: 0% 0%">
+  <div id="main">
+    <h1 id="quote">"juh-queer-ee"</h1>
+    <image id="headshot" src="img/chris.png"></image>
+    <p>click chris' head for more quotes</p>
+    <p>current quote count:</p>
+    <span id="quote-count">0</span>
+  </div>
+</div>
+<script src="js/init.js" type="text/javascript"></script>
+</body>
 </html>
