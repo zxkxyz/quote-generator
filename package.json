@@ -4,7 +4,7 @@
   "description": "Luxurious display of Chris quotes.",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "nodemon server/app.js",
     "test": "mocha"
   },
   "repository": {

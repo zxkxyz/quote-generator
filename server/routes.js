@@ -9,7 +9,7 @@ let routesApplicator = app => {
     });
   });
 
-  app.post('/addquote', utils.addQuote);
+  app.post('/quote', utils.addQuote);
 
   app.get('/quote', utils.getQuote);
 };

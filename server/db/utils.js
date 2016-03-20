@@ -1,38 +1,40 @@
+'use strict';
+
 const Quote = require('./models/quote.js');
-const Quotes = require('./collections/quotes.js');
+const db = require('./db.js');
+// const Quotes = require('./collections/quotes.js');
 
 let getQuote = (req, res) => {
-  Quotes.count({}, (err, result) => {
-    if(err) {
-      res.send(500, {status: "Error", message: "Error counting "});
-    } else {
-      res.send(200, {status: "Successful", message: result});
-    }
+  Quote.find({}).then((found) => {
+    console.log("Found:", found);
+    res.status(200).send(found);
   });
 };
 
 let addQuote = (req, res) => {
-  let quote = req.body.quote;
-
-  if(quote.length <= 0) {
+  let quoteText = req.body.quote;
+  console.log("req.body.quote:", quoteText);
+  if(quoteText.length <= 0) {
     console.log("Quote is too short.");
-    res.send(403, {status: "Error", message: "Message must not be 0 characters in length!"});
+    res.status(403).send({status: "Error", message: "Message must not be 0 characters in length!"});
   }
 
-  if(quote.length >= 64) {
+  if(quoteText.length >= 64) {
     console.log("Quote is too long.");
-    res.send(403, {status: "Error", message: "Message must be under 64 characters in length!"});
+    res.status(403).send({status: "Error", message: "Message must be under 64 characters in length!"});
   } else {
 
-    new Quote({quote}).fetch().then(function(found) {
-      if(found) {
+    Quote.find({quote: quoteText}).then((found) => {
+      console.log("Found:", found);
+      if(found.length) {
         console.log("That quote already exists.");
-        res.send(403, {status: "Error", message: "That quote already exists!"});
+        res.status(403).send({status: "Error", message: "That quote already exists!"});
       } else {
-        var quote = new Quote({quote});
+        let quote = new Quote({quote: quoteText});
+        console.log("Made quote:", quote);
         quote.save().then((newQuote) => {
-          Quotes.add(newQuote);
-          res.send(200, {status: "Added", message: "Quote added!"});
+          console.log("Quote added.");
+          res.status(200).send({status: "Added", message: "Quote added!"});
         });
       }
     });

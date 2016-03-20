@@ -1,5 +1,9 @@
+'use strict';
+
 const config = require('../../config/config.js');
 const mongoose = require('mongoose');
+
+// console.log("Config:", config);
 
 let mongo_config = {};
 let url = config.development.db.url;
@@ -12,10 +16,12 @@ if(process.env.NODE_ENV === "production") {
 
 mongoose.connect(url, mongo_config);
 
-var db = mongoose.connection;
+let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
   console.log('Mongoose connected!');
 });
+
+// console.log("Mongoose Connection:", Object.keys(db));
 
 module.exports = db;
